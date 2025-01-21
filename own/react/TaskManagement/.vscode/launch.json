@@ -1,22 +1,22 @@
 {
-    "version": "0.1.0",
-    "configurations": [
-        {
-            "name": "Attach to Hermes application - Experimental",
-            "request": "attach",
-            "type": "reactnativedirect",
-            "cwd": "${workspaceFolder}",
-            "address": "localhost",
-            "port": 8081
-            },
-      {
-        "name": "Debug Windows",
-        "cwd": "${workspaceFolder}",
-        "type": "reactnative",
-        "request": "launch",
-        "platform": "windows"
-      },
-      
-    ]
+  "version": "0.1.0",
+  "configurations": [
     
-  }
+
+    {
+      "name": "Attach to Hermes application - Experimental",
+      "request": "attach",
+      "type": "reactnativedirect",
+      "cwd": "${workspaceFolder}",
+      "address": "localhost",
+      "port": 8081
+    },
+    {
+      "name": "Debug Windows",
+      "cwd": "${workspaceFolder}",
+      "type": "reactnative",
+      "request": "launch",
+      "platform": "windows"
+    }
+  ]
+}
