@@ -1,9 +1,12 @@
 import { useState } from "react";
 import { Alert, Button, Modal, Pressable, StyleSheet, Text, View } from "react-native";
-import ItemModal from "./ItemModal";
+import CreateModal from "./CreateModal";
+
+
 
 const Header = ({ ...props }) => {
   const [modalVisible, setModalVisible] = useState(false);
+  
   
   return (
     <View style={styles.header}>
@@ -14,21 +17,27 @@ const Header = ({ ...props }) => {
         visible={modalVisible}
         onRequestClose={() => {
           setModalVisible(!modalVisible);
-        }}
-      >
+        }}>
         <View style={styles.centeredView}>
           <View style={styles.modalView}>
-            <ItemModal setModalVisible={() => setModalVisible(false)} />
+            <CreateModal setModalVisible={() => setModalVisible(false)} />
           </View>
         </View>
       </Modal>
+
+      
+
       <Pressable
         style={[styles.button, styles.buttonOpen]}
         onPress={() => setModalVisible(true)}
       >
         <Text style={styles.textStyle}>Create new</Text>
       </Pressable>
+      
+     
+      
     </View>
+    
   );
 };
 
@@ -37,7 +46,7 @@ export default Header;
 
 const styles = StyleSheet.create({
   header: {
-    backgroundColor: "gray",
+    backgroundColor: "#74C0FC",
     flexDirection: "row",
     padding: 20,
   },

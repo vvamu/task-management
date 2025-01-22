@@ -1,13 +1,14 @@
 import { Picker } from "@react-native-picker/picker";
 import React, { useState } from "react";
 import { Button, StyleSheet, Text, TextInput, TouchableOpacity, View } from "react-native";
-import taskManager from "./Functions/taskManager";
+import taskController from "./Functions/taskController";
 import Task from "../../../application/Task";
 import moment from "moment";
+import { v4 as uuidv4 } from 'uuid';
 
 
-const ItemModal = ({...props}) => {
-  const { createItem } = taskManager();     
+const CreateModal = ({...props}) => {
+  const { createItem } = taskController();     
   
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
@@ -23,18 +24,19 @@ const ItemModal = ({...props}) => {
   
 
   const handleCreateItem = () => {
-    // Create an object with all the values
+
     const newItem: Task = {
-      id: Math.random(), // You can use a unique ID generation method here
+      id: uuidv4(), 
       title: title,
       description: description,
       executionDateTime: dateTime,
+      dateCreated  :moment().date().toString(),
       address: address,
       status: taskStatus == "In progress" ? 0 : taskStatus == "Completed" ? 1 : -1,
     };
 
     createItem(newItem);
-
+  
     setTitle("");
     setDescription("");
     setDateTime(moment().date.toString())
@@ -112,7 +114,7 @@ const ItemModal = ({...props}) => {
   );
 };
 
-export default ItemModal;
+export default CreateModal;
 
 const styles = StyleSheet.create({
   container: {

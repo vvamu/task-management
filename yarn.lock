@@ -2101,6 +2101,23 @@
     shell-quote "^1.7.3"
     sudo-prompt "^9.0.0"
 
+"@react-native-community/cli-tools@^15.1.2":
+  version "15.1.3"
+  resolved "https://registry.yarnpkg.com/@react-native-community/cli-tools/-/cli-tools-15.1.3.tgz#354863cefd8e39e674c072c6b18a1ac4d4497d30"
+  integrity sha512-2RzoUKR+Y03ijBeeSoCSQihyN6dxy3fbHjraO4MheZZUzt/Yd1VMEDd0R5aa6rtiRDoknbHt45RL2GMa8MSaEA==
+  dependencies:
+    appdirsjs "^1.2.4"
+    chalk "^4.1.2"
+    execa "^5.0.0"
+    find-up "^5.0.0"
+    mime "^2.4.1"
+    open "^6.2.0"
+    ora "^5.4.1"
+    prompts "^2.4.2"
+    semver "^7.5.2"
+    shell-quote "^1.7.3"
+    sudo-prompt "^9.0.0"
+
 "@react-native-community/cli-types@15.0.0-alpha.2":
   version "15.0.0-alpha.2"
   resolved "https://registry.npmjs.org/@react-native-community/cli-types/-/cli-types-15.0.0-alpha.2.tgz"
@@ -2130,9 +2147,26 @@
     prompts "^2.4.2"
     semver "^7.5.2"
 
-"@react-native-picker/picker@react-native-picker/picker":
-  version "2.11.0"
-  resolved "https://codeload.github.com/react-native-picker/picker/tar.gz/c6ce84ba13fba24baccd2ba984d864c28c9d8ee3"
+"@react-native-picker/picker@2.9.0":
+  version "2.9.0"
+  resolved "https://registry.yarnpkg.com/@react-native-picker/picker/-/picker-2.9.0.tgz#0a7053ca174ec697388cb79032fb4c1445554e07"
+  integrity sha512-khEhIW/uhfMqq/+tvg4rEAiPGT8GX+Y6QydlP2TSMSmRHoSJK+ShXvXZXSr4Sii4imkj4BwvLunGywwtQDODqg==
+
+"@react-native-vector-icons/common@^11.0.0":
+  version "11.0.0"
+  resolved "https://registry.yarnpkg.com/@react-native-vector-icons/common/-/common-11.0.0.tgz#c3b2d1220b2d7869564c77312691e234e32ab413"
+  integrity sha512-Ee0UAOsJRAUKb/yzs6qRSuxxLX7LbyQP/jikik9HZwfSCO81MkHwklXbYg6/+NAaYPyLCa3VsATorWY3f5M3lQ==
+  dependencies:
+    "@react-native-community/cli-tools" "^15.1.2"
+    picocolors "^1.1.1"
+    plist "^3.1.0"
+
+"@react-native-vector-icons/fontawesome6@^6.7.1":
+  version "6.7.1"
+  resolved "https://registry.yarnpkg.com/@react-native-vector-icons/fontawesome6/-/fontawesome6-6.7.1.tgz#a4704086822024100fb9c0adc314afa4961aa61f"
+  integrity sha512-4B23wt80oX7hUgca11X8E8DLvf9rKAwxwZQkhc+6FdSq2lWXMg6Sr2a5v99hUQnefyJk4emry30jQapjjyhGtA==
+  dependencies:
+    "@react-native-vector-icons/common" "^11.0.0"
 
 "@react-native-windows/cli@0.76.2":
   version "0.76.2"
@@ -4674,10 +4708,10 @@ expo-keep-awake@~14.0.2:
   resolved "https://registry.npmjs.org/expo-keep-awake/-/expo-keep-awake-14.0.2.tgz"
   integrity sha512-71XAMnoWjKZrN8J7Q3+u0l9Ytp4OfhNAYz8BCWF1/9aFUw09J3I7Z5DuI3MUsVMa/KWi+XhG+eDUFP8cVA19Uw==
 
-expo-modules-autolinking@2.0.6:
-  version "2.0.6"
-  resolved "https://registry.npmjs.org/expo-modules-autolinking/-/expo-modules-autolinking-2.0.6.tgz"
-  integrity sha512-E5G0t9kQ3i69uOD/nbU9MKrrLE7kl0DcfXOUmmRu6zskQ90kyg7eBXoxtg9C59oQCCXiQrNoBhEZCnAIKgI1og==
+expo-modules-autolinking@2.0.7:
+  version "2.0.7"
+  resolved "https://registry.yarnpkg.com/expo-modules-autolinking/-/expo-modules-autolinking-2.0.7.tgz#fc40ba7505f42f971253ea20a927693f2c123a56"
+  integrity sha512-rkGc6a/90AC3q8wSy4V+iIpq6Fd0KXmQICKrvfmSWwrMgJmLfwP4QTrvLYPYOOMjFwNJcTaohcH8vzW/wYKrMg==
   dependencies:
     "@expo/spawn-async" "^1.7.2"
     chalk "^4.1.0"
@@ -4695,10 +4729,10 @@ expo-modules-core@2.1.4:
   dependencies:
     invariant "^2.2.4"
 
-expo@^52.0.0:
-  version "52.0.26"
-  resolved "https://registry.npmjs.org/expo/-/expo-52.0.26.tgz"
-  integrity sha512-9osjHwAyLxCexnLEJXaZDZowbQl7IHqeMOcx90xwMQp2O/5XP+3T7uPK0sNdjlEO05QzAv0k4oXAKMRr5gdEqg==
+expo@^52.0.27:
+  version "52.0.27"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-52.0.27.tgz#9eeceda4990ee5a78a66d3f2c26122118ba9454c"
+  integrity sha512-PxIS8JRTegUNYq4vNeP0eCqm7p17oGNYjJ/9x207zkwVlklywD9LYIckGojXEY5JPW/DwhbhtO6E2hMgdQQugg==
   dependencies:
     "@babel/runtime" "^7.20.0"
     "@expo/cli" "0.22.10"
@@ -4713,7 +4747,7 @@ expo@^52.0.0:
     expo-file-system "~18.0.7"
     expo-font "~13.0.3"
     expo-keep-awake "~14.0.2"
-    expo-modules-autolinking "2.0.6"
+    expo-modules-autolinking "2.0.7"
     expo-modules-core "2.1.4"
     fbemitter "^3.0.0"
     web-streams-polyfill "^3.3.2"
@@ -7467,7 +7501,7 @@ pkg-dir@^4.2.0:
   dependencies:
     find-up "^4.0.0"
 
-plist@^3.0.5:
+plist@^3.0.5, plist@^3.1.0:
   version "3.1.0"
   resolved "https://registry.npmjs.org/plist/-/plist-3.1.0.tgz"
   integrity sha512-uysumyrvkUX0rX/dEVqt8gC3sTBzd4zoWfLeS29nb53imdaXVvLINYXTI2GNqzaMuvacNx4uJQ8+b3zXR0pkgQ==
@@ -9069,6 +9103,11 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.npmjs.org/utils-merge/-/utils-merge-1.0.1.tgz"
   integrity sha512-pMZTvIkT1d+TFGvDOqodOclx0QWkkgi6Tdoa8gC8ffGAAqz9pzPTZWAybbsHHoED/ztMtkv/VoYTYyShUn81hA==
+
+uuid@^11.0.5:
+  version "11.0.5"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.0.5.tgz#07b46bdfa6310c92c3fb3953a8720f170427fc62"
+  integrity sha512-508e6IcKLrhxKdBbcA2b4KQZlLVp2+J5UwQ6F7Drckkc5N9ZJwFa4TgWtsww9UG8fGHbm6gbV19TdM5pQ4GaIA==
 
 uuid@^7.0.3:
   version "7.0.3"
