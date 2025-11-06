@@ -24,7 +24,7 @@
     "react-native-element-dropdown": "^2.12.4",
     "react-native-gesture-handler": "^2.22.0",
     "react-native-safe-area-context": "^5.1.0",
-    "react-native-windows": "0.76.5",
+    "react-native-windows": "1.0.0",
     "uuid": "^11.0.5"
   },
   "devDependencies": {
